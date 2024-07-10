@@ -17,7 +17,6 @@ git clone https://github.com/tianyaohu/tortoisebot_ros2_ci.git
 In Terminal #1
 ```
 cd ./tortoisebot_ros2_ci/
-#pull remote images from docker hub (5min~)
 bash start_jenkins.sh
 ```
 Expected Result:
