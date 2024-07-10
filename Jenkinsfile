@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'tortoisebot_ros2_waypoint_test:latest'
+            image 'tianyaoh501679/jenkins_cicd_learning:tortoisebot_ros2_waypoint_test'
             args '-u root -v /home/user/ros2_ws/src/tortoisebot:/root/ros2_ws/src/tortoisebot -v /tmp/.X11-unix:/tmp/.X11-unix  -e DISPLAY=$DISPLAY ' 
         }
     }
