@@ -8,7 +8,6 @@ pipeline {
     stages {
         stage('Prepare Environment') {
             steps {
-                // Change here to explicitly call bash
                 sh label: 'Setting Up Environment', script: '''
                 echo "Sourcing ROS2 environment..."
                 /bin/bash -c "source /opt/ros/galactic/setup.bash && cd /root/ros2_ws/ && colcon build && source /root/ros2_ws/install/setup.bash "
@@ -17,7 +16,6 @@ pipeline {
         }
         stage('Start Gazebo Simulation') {
             steps {
-                // Similarly, ensure bash is used here
                 sh label: 'Launching Gazebo', script: '''
                 /bin/bash -c "source /opt/ros/galactic/setup.bash && source /root/ros2_ws/install/setup.bash && ros2 launch tortoisebot_bringup bringup.launch.py use_sim_time:=True &"
                 '''

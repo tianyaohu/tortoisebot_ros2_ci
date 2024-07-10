@@ -33,5 +33,5 @@ SHELL ["/bin/bash", "-c"]
 WORKDIR /root/ros2_ws/src
 RUN git clone https://github.com/tianyaohu/ros2_tortoisebot_GTest.git
 
-# Entrypoint to ensure that the correct environment is sourced
+# Entrypoint bash
 ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/galactic/setup.bash && exec bash"]
