@@ -7,7 +7,7 @@ Welcome, This repository is part of Jenkins CI setup, containing pipeline script
 
 ### Clone Repo
 In Terminal #1
-```
+``` 
 #change it to your own workspace path if needed
 cd ~/ros2_ws/src
 git clone https://github.com/tianyaohu/tortoisebot_ros2_ci.git
